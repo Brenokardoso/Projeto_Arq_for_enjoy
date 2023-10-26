@@ -17,7 +17,7 @@ class _MyCardState extends State<MyCard> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 1050,
+      height: 1080,
       margin: EdgeInsets.symmetric(horizontal: 120),
       color: Colors.transparent,
       child: Column(
@@ -63,7 +63,9 @@ class _MyCardState extends State<MyCard> {
                           Color.fromRGBO(130, 104, 20, 1),
                         ),
                       ),
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.of(context).pushNamed("/catedral");
+                      },
                       child: Text(
                         "Conhecer mais",
                         style: TextStyle(color: Colors.white, fontSize: 16),
@@ -226,11 +228,11 @@ class _MyCardState extends State<MyCard> {
               ),
             ],
           ),
-          SizedBox(height: 25),
+          SizedBox(height: 40),
           TextButton(
             style: ButtonStyle(
               fixedSize: MaterialStateProperty.all<Size>(
-                Size(200, 60),
+                Size(240, 60),
               ),
               shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                 RoundedRectangleBorder(
@@ -246,7 +248,7 @@ class _MyCardState extends State<MyCard> {
             child: Text(
               "Ver mais patrimônios",
               style: TextStyle(
-                color: Color.fromRGBO(130, 104, 20, 1),
+                color: Color.fromRGBO(166, 147, 85, 1),
                 fontSize: 16,
               ),
             ),

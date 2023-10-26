@@ -29,15 +29,15 @@ class _MyCardFootterState extends State<MyCardFootter> {
                 height: 490,
                 width: MediaQuery.of(context).size.width * 0.25,
                 decoration: BoxDecoration(
-                    image:
-                        DecorationImage(image: card1_footer, fit: BoxFit.fill)),
+                  image: DecorationImage(image: card1_footer, fit: BoxFit.fill),
+                ),
               ),
               Positioned(
                 bottom: 0,
                 child: Container(
                   height: 285,
                   width: MediaQuery.of(context).size.width * 0.25,
-                  color: Colors.white,
+                  color: Color.fromRGBO(239, 235, 221, 1),
                   child: Text(
                     "Lorem ipsum dolor sit amet consectetur.Tellus vel malesuada diam eu risus nisl. Fames senectus ut tristique ut vitae proin mattis.",
                     style: TextStyle(fontSize: 25.6, fontFamily: 'Jost'),
@@ -71,26 +71,48 @@ class _MyCardFootterState extends State<MyCardFootter> {
               ),
             ],
           ),
-          SizedBox(width: MediaQuery.of(context).size.width * 0.07),
+          SizedBox(width: MediaQuery.of(context).size.width * 0.041),
           Stack(
             children: [
               Container(
                 height: 490,
                 width: MediaQuery.of(context).size.width * 0.25,
                 decoration: BoxDecoration(
-                    image:
-                        DecorationImage(image: card2_fotter, fit: BoxFit.fill)),
+                  color: Colors.white,
+                  image: DecorationImage(
+                    image: card2_fotter,
+                    fit: BoxFit.cover,
+                  ),
+                ),
               ),
               Positioned(
                 bottom: 0,
                 child: Container(
+                  color: Color.fromRGBO(239, 235, 221, 1),
                   height: 285,
                   width: MediaQuery.of(context).size.width * 0.25,
-                  color: Colors.white,
                   child: Text(
                     "Lorem ipsum dolor sit amet consectetur.Tellus vel malesuada diam eu risus nisl. Fames senectus ut tristique ut vitae proin mattis.",
                     style: TextStyle(fontSize: 25.6, fontFamily: 'Jost'),
                   ),
+                ),
+              ),
+              Positioned(
+                bottom: 0,
+                left: -6,
+                child: Container(
+                  height: 285,
+                  width: 7,
+                  color: Colors.white,
+                ),
+              ),
+              Positioned(
+                bottom: 0,
+                right: -6,
+                child: Container(
+                  height: 285,
+                  width: 7,
+                  color: Colors.white,
                 ),
               ),
               Positioned(
@@ -120,7 +142,7 @@ class _MyCardFootterState extends State<MyCardFootter> {
               ),
             ],
           ),
-          SizedBox(width: MediaQuery.of(context).size.width * 0.055),
+          SizedBox(width: MediaQuery.of(context).size.width * 0.041),
           Stack(
             children: [
               Container(
@@ -132,10 +154,19 @@ class _MyCardFootterState extends State<MyCardFootter> {
               ),
               Positioned(
                 bottom: 0,
+                left: -6,
+                child: Container(
+                  height: 285,
+                  width: 7,
+                  color: Colors.white,
+                ),
+              ),
+              Positioned(
+                bottom: 0,
                 child: Container(
                   height: 285,
                   width: MediaQuery.of(context).size.width * 0.25,
-                  color: Colors.white,
+                  color: Color.fromRGBO(239, 235, 221, 1),
                   child: Text(
                     "Lorem ipsum dolor sit amet consectetur.Tellus vel malesuada diam eu risus nisl. Fames senectus ut tristique ut vitae proin mattis.",
                     style: TextStyle(fontSize: 25.6, fontFamily: 'Jost'),
