@@ -17,11 +17,6 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   @override
-  ImageProvider card1 = AssetImage("lib/assets/img/cards/Catedral.png");
-  ImageProvider card2 = AssetImage("lib/assets/img/cards/Igreja.png");
-  ImageProvider card3 = AssetImage("lib/assets/img/cards/OldHouse.png");
-  ImageProvider card4 = AssetImage("lib/assets/img/cards/Museu.png");
-
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: PreferredSize(
@@ -86,7 +81,7 @@ class _HomePageState extends State<HomePage> {
                   margin: EdgeInsets.symmetric(horizontal: 120),
                   width: MediaQuery.of(context).size.width * 1,
                   height: 500,
-                  color: Color.fromRGBO(213, 209, 197, 0.698),
+                  color: Color.fromRGBO(239, 235, 221, 1),
                   child: SingleChildScrollView(
                     child: Column(
                       children: [

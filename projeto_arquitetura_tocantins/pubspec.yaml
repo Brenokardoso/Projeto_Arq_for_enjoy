@@ -66,6 +66,8 @@ flutter:
   - lib/assets/img/logo/LogoAppBarArquitetura.png
   - lib/assets/img/carroussel/
   - lib/assets/img/cards/
+  - lib/assets/img/base_page/
+
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

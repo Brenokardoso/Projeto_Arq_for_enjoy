@@ -30,62 +30,71 @@ class _AppBarSuperiorState extends State<AppBarSuperior> {
     return Container(
       height: 50,
       color: Color.fromRGBO(93, 76, 22, 1),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.end,
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text(
-            "A-",
-            style: TextStyle(
-              color: Colors.white,
-            ),
+          Stack(
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  Text(
+                    "A-",
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),
+                  ),
+                  SizedBox(width: 10),
+                  Text(
+                    "A",
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),
+                  ),
+                  SizedBox(width: 10),
+                  Text(
+                    "A+",
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),
+                  ),
+                  SizedBox(
+                    width: 40,
+                  ),
+                  TextButton(
+                    onPressed: () {},
+                    child: Text(
+                      "Acessibilidade",
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  ),
+                  SizedBox(width: 40),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(
+                      FontAwesomeIcons.facebook,
+                      color: Colors.white,
+                    ),
+                  ),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(
+                      FontAwesomeIcons.xTwitter,
+                      color: Colors.white,
+                    ),
+                  ),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(
+                      FontAwesomeIcons.instagram,
+                      color: Colors.white,
+                    ),
+                  ),
+                  SizedBox(width: 10),
+                ],
+              ),
+            ],
           ),
-          SizedBox(width: 10),
-          Text(
-            "A",
-            style: TextStyle(
-              color: Colors.white,
-            ),
-          ),
-          SizedBox(width: 10),
-          Text(
-            "A+",
-            style: TextStyle(
-              color: Colors.white,
-            ),
-          ),
-          SizedBox(
-            width: 40,
-          ),
-          TextButton(
-            onPressed: () {},
-            child: Text(
-              "Acessibilidade",
-              style: TextStyle(color: Colors.white),
-            ),
-          ),
-          SizedBox(width: 40),
-          IconButton(
-            onPressed: () {},
-            icon: Icon(
-              FontAwesomeIcons.facebook,
-              color: Colors.white,
-            ),
-          ),
-          IconButton(
-            onPressed: () {},
-            icon: Icon(
-              FontAwesomeIcons.xTwitter,
-              color: Colors.white,
-            ),
-          ),
-          IconButton(
-            onPressed: () {},
-            icon: Icon(
-              FontAwesomeIcons.instagram,
-              color: Colors.white,
-            ),
-          ),
-          SizedBox(width: 10),
         ],
       ),
     );
@@ -128,7 +137,11 @@ class _AppBarInferiorState extends State<AppBarInferior> {
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        if (ModalRoute.of(context)?.settings.name != "/") {
+                          Navigator.of(context).pushNamed("/");
+                        }
+                      },
                       child: Text(
                         "Home",
                         style: TextStyle(color: Colors.white),
